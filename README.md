@@ -11,7 +11,7 @@ Neon Racer is a three-lane endless highway game in a bold, fighting-game-inspire
 
  
 
-**Live demo:** `https://comelanggilesgiles.github.io/neon-racer/` (available after you enable GitHub Pages, see [Deploy](#deploy-to-github-pages-optional)).
+
 
 ---
 
