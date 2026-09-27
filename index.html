@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neon Racer</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c" aria-label="Neon Racer game"></canvas>
+
+  <div class="hud">
+    <div class="side left"><div class="lbl ol">BOOST</div><div class="sfbar"><i id="boostfill"></i></div></div>
+    <div class="mid"><div class="lbl ol">SCORE</div><div id="score" class="ol">0</div><div class="hi ol">HI <span id="best">0</span></div></div>
+    <div class="side right"><div class="lbl ol"><span id="kmh">180</span> KM/H</div><div class="sfbar cyan"><i id="speedfill"></i></div></div>
+  </div>
+
+  <div class="touchbar" id="touch"><div></div><div></div></div>
+
+  <div class="overlay" id="startScreen">
+    <div class="round ol">ROUND 1</div>
+    <h1 class="ol">NEON RACER</h1>
+    <p><b>Left / Right</b> arrows or <b>A / D</b> switch lanes. On a phone, tap the left or right side of the road.</p>
+    <p>Dodge cars at the last second to build a <b>COMBO</b>. Grab a <b>boost pad</b> and the whole road goes wild.</p>
+    <button id="startBtn">FIGHT!</button>
+  </div>
+
+  <div class="overlay hidden" id="overScreen">
+    <h1 class="ko ol">K.O.!</h1>
+    <div class="big ol" id="finalScore">0</div>
+    <p id="finalNote"></p>
+    <button id="retryBtn">REMATCH</button>
+  </div>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
